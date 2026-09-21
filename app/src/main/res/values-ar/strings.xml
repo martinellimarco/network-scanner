@@ -79,6 +79,7 @@
     <!-- Labels -->
     <string name="label_ip_address">عنوان IP</string>
     <string name="label_mac_address">عنوان MAC</string>
+    <string name="label_mac_address_randomized">عنوان MAC (عشوائي)</string>
     <string name="label_vendor">المُصنِّع</string>
     <string name="label_latency">زمن الاستجابة</string>
     <string name="label_hostname">اسم المضيف</string>
@@ -240,4 +241,11 @@
     <string name="scanned_addresses_progress">تم مسح %1$d/%2$d من العناوين</string>
     <string name="detecting_os">جارٍ كشف نظام التشغيل…</string>
 
+
+    <string name="pref_neighbor_source_title">الوصول إلى عناوين MAC</string>
+    <string name="pref_neighbor_source_summary">يخفي Android 10+ عناوين MAC للأجهزة الأخرى عن التطبيقات. اقرأها عبر Shizuku أو صلاحيات الروت.</string>
+    <string name="neighbor_source_none">إيقاف</string>
+    <string name="neighbor_source_root">روت</string>
+    <string name="neighbor_source_shizuku_unavailable">Shizuku غير قيد التشغيل أو تم رفض الإذن</string>
+    <string name="neighbor_source_root_unavailable">تم رفض صلاحيات الروت</string>
 </resources>

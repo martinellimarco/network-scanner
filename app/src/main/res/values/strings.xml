@@ -81,6 +81,7 @@
     <!-- Labels -->
     <string name="label_ip_address">IP Address</string>
     <string name="label_mac_address">MAC Address</string>
+    <string name="label_mac_address_randomized">MAC Address (randomized)</string>
     <string name="label_vendor">Vendor</string>
     <string name="label_latency">Latency</string>
     <string name="label_hostname">Hostname</string>
@@ -222,6 +223,15 @@
     <!-- Settings - Custom Ports -->
     <string name="pref_custom_ports_title">Custom Ports</string>
     <string name="pref_custom_ports_summary">Manage ports to scan during deep scan</string>
+
+    <!-- Settings - Privileged ARP access -->
+    <string name="pref_neighbor_source_title">MAC address access</string>
+    <string name="pref_neighbor_source_summary">Android 10+ hides other devices\' MAC addresses from apps. Read them through Shizuku or root instead.</string>
+    <string name="neighbor_source_none">Off</string>
+    <string name="neighbor_source_shizuku" translatable="false">Shizuku</string>
+    <string name="neighbor_source_root">Root</string>
+    <string name="neighbor_source_shizuku_unavailable">Shizuku is not running or permission was denied</string>
+    <string name="neighbor_source_root_unavailable">Root access was denied</string>
 
     <!-- Device Icon Selection -->
     <string name="choose_device_icon">Choose Device Icon</string>

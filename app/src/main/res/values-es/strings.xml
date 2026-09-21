@@ -77,6 +77,7 @@
     <!-- Labels -->
     <string name="label_ip_address">Direccion IP</string>
     <string name="label_mac_address">Dirección MAC</string>
+    <string name="label_mac_address_randomized">Dirección MAC (aleatoria)</string>
     <string name="label_vendor">Fabricante</string>
     <string name="label_latency">Latencia</string>
     <string name="label_hostname">Nombre de host</string>
@@ -237,4 +238,11 @@
     <string name="scanning_port">Escaneando puerto %1$d…</string>
     <string name="scanned_addresses_progress">Escaneando %1$d/%2$d de direcciones</string>
     <string name="detecting_os">Detectando SO…</string>
+
+    <string name="pref_neighbor_source_title">Acceso a direcciones MAC</string>
+    <string name="pref_neighbor_source_summary">Android 10+ oculta a las aplicaciones las direcciones MAC de otros dispositivos. Léelas mediante Shizuku o root.</string>
+    <string name="neighbor_source_none">Desactivado</string>
+    <string name="neighbor_source_root">Root</string>
+    <string name="neighbor_source_shizuku_unavailable">Shizuku no está en ejecución o se denegó el permiso</string>
+    <string name="neighbor_source_root_unavailable">Se denegó el acceso root</string>
 </resources>

@@ -77,6 +77,7 @@
     <!-- Labels -->
     <string name="label_ip_address">IP адрес</string>
     <string name="label_mac_address">MAC адрес</string>
+    <string name="label_mac_address_randomized">MAC адрес (рандомизированный)</string>
     <string name="label_vendor">Производитель</string>
     <string name="label_latency">Задержка</string>
     <string name="label_hostname">Имя хоста</string>
@@ -221,4 +222,11 @@
 
     <!-- Device Icon Selection -->
     <string name="choose_device_icon">Выбрать иконку устройства</string>
+
+    <string name="pref_neighbor_source_title">Доступ к MAC адресам</string>
+    <string name="pref_neighbor_source_summary">Android 10+ скрывает от приложений MAC адреса других устройств. Читать их через Shizuku или root.</string>
+    <string name="neighbor_source_none">Выкл.</string>
+    <string name="neighbor_source_root">Root</string>
+    <string name="neighbor_source_shizuku_unavailable">Shizuku не запущен или в разрешении отказано</string>
+    <string name="neighbor_source_root_unavailable">В root-доступе отказано</string>
 </resources>

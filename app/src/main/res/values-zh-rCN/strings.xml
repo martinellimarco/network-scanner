@@ -81,6 +81,7 @@
     <!-- Labels -->
     <string name="label_ip_address">IP 地址</string>
     <string name="label_mac_address">MAC 地址</string>
+    <string name="label_mac_address_randomized">MAC 地址（随机）</string>
     <string name="label_vendor">厂商</string>
     <string name="label_latency">延迟</string>
     <string name="label_hostname">主机名</string>
@@ -242,4 +243,11 @@
     <string name="scanned_addresses_progress">已扫描 %1$d/%2$d 个地址</string>
     <string name="detecting_os">正在检测操作系统…</string>
 
+
+    <string name="pref_neighbor_source_title">MAC 地址访问</string>
+    <string name="pref_neighbor_source_summary">Android 10 及以上版本对应用隐藏其他设备的 MAC 地址。可改为通过 Shizuku 或 Root 读取。</string>
+    <string name="neighbor_source_none">关闭</string>
+    <string name="neighbor_source_root">Root</string>
+    <string name="neighbor_source_shizuku_unavailable">Shizuku 未运行或权限被拒绝</string>
+    <string name="neighbor_source_root_unavailable">Root 权限被拒绝</string>
 </resources>
