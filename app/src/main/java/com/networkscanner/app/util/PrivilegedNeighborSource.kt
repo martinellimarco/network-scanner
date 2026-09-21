@@ -81,7 +81,7 @@ object PrivilegedNeighborSource {
     // The command goes through stdin because `su -c` is not universal (AOSP's su lacks it).
     private fun runSu(command: String): List<String> = try {
         val process = ProcessBuilder("su").redirectErrorStream(true).start()
-// The su manager may wait for the user; cap the wait to SU_TIMEOUT_S to avoid hanging indefinitely.
+        // The su manager may wait for the user; cap the wait to SU_TIMEOUT_S to avoid hanging indefinitely.
         thread(isDaemon = true) {
             if (!process.waitFor(SU_TIMEOUT_S, TimeUnit.SECONDS)) process.destroy()
         }
@@ -150,6 +150,7 @@ object PrivilegedNeighborSource {
             suspendCancellableCoroutine { continuation ->
                 val listener = object : Shizuku.OnRequestPermissionResultListener {
                     override fun onRequestPermissionResult(requestCode: Int, grantResult: Int) {
+                        if (requestCode != SHIZUKU_REQUEST_CODE) return
                         Shizuku.removeRequestPermissionResultListener(this)
                         if (continuation.isActive) {
                             continuation.resume(grantResult == PackageManager.PERMISSION_GRANTED)
